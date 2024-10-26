@@ -11,3 +11,14 @@ checkpoint config2ospf
 
 
 show checkpoint summary
+
+
+task3: ste to site/IPSEC VPN with Threat Defense
+conf t
+no logging console
+line vty 0 14
+ exec-timeout 0 0
+int gi 1
+ no shut
+ ip add 192.168.101. 255.255.255.0
+ do wr
