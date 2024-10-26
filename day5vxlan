@@ -1,0 +1,13 @@
+hostname nexusPH
+feature eigrp
+checkpoint config1
+
+hostname NexusPinas
+feature ospf
+int lo 1
+ ip add 1.1.1.1/32
+ no shut
+checkpoint config2ospf
+
+
+show checkpoint summary
