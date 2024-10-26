@@ -740,6 +740,8 @@ int gi 1
 @allRouters:
 config t
 cdp run
+int gi 1
+cdp enable
 int gi 2
 cdp enable
 no shut
@@ -802,9 +804,9 @@ authentication-key rivansite1
 ip lisp map-server
 ip lisp map-resolver
 !
-show list site
+show lisp site
 show ip lisp map-cache
-show ip list database
+show ip lisp database
 end
 @ETR/ITR:
 R1:
